@@ -1,0 +1,26 @@
+[
+  {
+    "id": "green",
+    "color": "#7FAA65",
+    "quantity": 4,
+    "position": 0,
+    "title": "Green",
+    "description": "Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc."
+  },
+  {
+    "id": "sand",
+    "color": "#AA9765",
+    "quantity": 2,
+    "position": 1,
+    "title": "Sand",
+    "description": "Ac ut consequat semper viverra nam libero. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Suspendisse lacus sed viverra."
+  },
+  {
+    "id": "blue",
+    "color": "#656CAA",
+    "quantity": 5,
+    "position": 3,
+    "title": "Blue",
+    "description": "Quis blandit turpis cursus in hac habitasse. Sed euismod nisi porta lorem mollis aliquam. Dolor sit amet consectetur adipiscing elit."
+  }
+]
