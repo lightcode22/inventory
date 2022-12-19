@@ -26,13 +26,10 @@ const item = inventoryStore.items[indexInStore];
   display: flex;
   justify-content: center;
   align-items: center;
-
   pointer-events: none;
   background-color: transparent;
-
   width: 100%;
   height: 100%;
-
   padding: 22px 25px;
 }
 
@@ -40,17 +37,13 @@ const item = inventoryStore.items[indexInStore];
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-size: 10px;
-
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 -1px -1px 0;
-
   width: 16px;
   height: 16px;
-
   border-radius: 6px 0px 0px 0px;
 
   &.light {

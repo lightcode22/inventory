@@ -47,13 +47,10 @@ const closeModal = () => {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 250px;
   height: 100%;
-
   position: absolute;
   right: 0;
-
   transition: right 1s;
 
   &.light {
@@ -96,9 +93,7 @@ const closeModal = () => {
 .image-wrapper {
   height: 190px;
   width: 100%;
-
   padding: 30px 60px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -62,11 +62,9 @@ const removeItems = (e) => {
 .controls {
   min-height: 75px;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   font-size: 14px;
 }
 
@@ -88,7 +86,6 @@ form {
   input {
     margin-bottom: 20px;
     width: 100%;
-
     padding: 12px;
     font-weight: 500;
 

@@ -19,9 +19,9 @@ button {
   padding: 8px 16px;
 
   &.dark {
-    color: var(--dark-text);
+    color: #fff;
     border: 1px solid var(--dark-border);
-    background-color: #1e1e1e;
+    background-color: transparent;
   }
 
   &.light {

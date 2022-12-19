@@ -37,10 +37,8 @@ const items = computed(() => {
 section {
   border-radius: 12px;
   overflow: hidden;
-
   width: 525px;
   height: 500px;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);

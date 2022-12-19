@@ -1,7 +1,6 @@
 <template>
   <div>
     <h3>{{ title }}</h3>
-
     <p>{{ text }}</p>
   </div>
 </template>
@@ -14,12 +13,9 @@ const { title, text } = defineProps({ title: String, text: String });
 div {
   display: flex;
   flex-direction: column;
-
   color: var(--dark-text);
-
   overflow: hidden;
   text-overflow: ellipsis;
-
   text-align: center;
   height: 100%;
 }
