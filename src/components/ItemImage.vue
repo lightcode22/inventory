@@ -1,7 +1,7 @@
 <template>
   <div class="item-image">
-    <div class="layer bottom" :style="'--primary: ' + props.color"></div>
-    <div class="layer front" :style="'--secondary: ' + secondaryColor"></div>
+    <div class="layer bottom" :style="primaryColor"></div>
+    <div class="layer front" :style="secondaryColor"></div>
   </div>
 </template>
 
@@ -9,13 +9,16 @@
 import { computed } from "@vue/reactivity";
 import { hexToRgba } from "../utils";
 
-const props = defineProps({ color: String });
+const props = defineProps(["color"]);
+
+const primaryColor = `--primary: ${props.color}`;
 
 // backdrop-filter: blur не применяется, если background-color задан в HEX
 // поэтому необходимо преобразование HEX в RGBA
 const secondaryColor = computed(() => {
   if (props.color) {
-    return hexToRgba(props.color, 0.35);
+    const rgba = hexToRgba(props.color, 0.35);
+    return `--secondary: ${rgba}`;
   }
 
   return;

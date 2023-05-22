@@ -11,13 +11,13 @@ import useTheme from "../composables/useTheme";
 import { useInventoryStore } from "@/stores/inventory";
 import ItemImage from "./ItemImage.vue";
 
-const { indexInStore } = defineProps({ indexInStore: Number });
+const props = defineProps(["indexInStore"]);
 
 const inventoryStore = useInventoryStore();
 
 const theme = computed(() => useTheme());
 
-const item = inventoryStore.items[indexInStore];
+const item = inventoryStore.items[props.indexInStore];
 </script>
 
 <style lang="scss" scoped>

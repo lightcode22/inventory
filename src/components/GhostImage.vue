@@ -1,14 +1,15 @@
 <template>
   <div class="ghost-image">
     <div class="item-image">
-      <div class="layer bottom" :style="'--color: ' + props.color"></div>
-      <div class="layer front" :style="'--color: ' + props.color"></div>
+      <div class="layer bottom" :style="colorStyle"></div>
+      <div class="layer front" :style="colorStyle"></div>
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps(["color"]);
+const colorStyle = `--color: ${props.color}`;
 </script>
 
 <style lang="scss" scoped>

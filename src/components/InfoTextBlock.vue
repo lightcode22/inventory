@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-const { title, text } = defineProps({ title: String, text: String });
+defineProps(["title", "text"]);
 </script>
 
 <style lang="scss" scoped>

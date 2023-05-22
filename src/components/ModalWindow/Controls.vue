@@ -15,8 +15,9 @@
             @click="toggleForm"
             :class="theme"
           >
-            Отмена</button
-          ><button type="submit" class="confirm">Подтвердить</button>
+            Отмена
+          </button>
+          <button type="submit" class="confirm">Подтвердить</button>
         </div>
       </form>
     </div>
@@ -31,7 +32,7 @@ import { ref, computed } from "@vue/reactivity";
 import { useInventoryStore } from "@/stores/inventory";
 import useTheme from "../../composables/useTheme";
 
-const props = defineProps({ itemId: String });
+const props = defineProps(["itemId"]);
 
 const inventoryStore = useInventoryStore();
 
@@ -45,7 +46,7 @@ const toggleForm = () => {
   isFormOpen.value = !isFormOpen.value;
 };
 
-const removeItems = (e) => {
+const removeItems = () => {
   const { value } = formInput;
 
   if (isNaN(Number(value))) {

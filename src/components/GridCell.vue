@@ -25,10 +25,7 @@ import { useModalStore } from "@/stores/modal";
 const inventoryStore = useInventoryStore();
 const modalStore = useModalStore();
 
-const props = defineProps({
-  position: Number,
-  indexInStore: Number,
-});
+const props = defineProps(["position", "indexInStore"]);
 
 const isDragged = ref(false);
 
